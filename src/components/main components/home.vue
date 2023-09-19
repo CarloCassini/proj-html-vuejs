@@ -20,6 +20,7 @@ export default {
 
 <template>
   <h1>home</h1>
+  <img :src="ciccio" alt="" />
 </template>
 
 <style lang="scss" scoped></style>

@@ -43,6 +43,7 @@ export default {
 </template>
 
 <style lang="scss">
+@use "./style/variables.scss" as *;
 @use "./style/general.scss" as *;
 
 .header-zone {
