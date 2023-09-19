@@ -3,7 +3,9 @@ export default {
   components: {},
 
   data() {
-    return {};
+    return {
+      ciccio: "images/backgrounds/hero-header-bakery.jpg",
+    };
   },
 
   computed: {},
@@ -19,8 +21,11 @@ export default {
 </script>
 
 <template>
-  <h1>home</h1>
   <img :src="ciccio" alt="" />
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+img {
+  width: 100%;
+}
+</style>

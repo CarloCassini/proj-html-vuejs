@@ -34,10 +34,7 @@ export default {
 <template>
   <Floating_button />
   <AppHeader class="header-zone debug" />
-  <div v-for="section in store.siteSections">
-    {{ section }}
-  </div>
-  <AppMain class="debug" />
+  <AppMain />
 
   <AppFooter class="debug" />
 </template>
@@ -47,6 +44,10 @@ export default {
 @use "./style/general.scss" as *;
 
 .header-zone {
-  height: 10vh;
+  height: var(--header-height);
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
 }
 </style>

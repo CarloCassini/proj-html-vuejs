@@ -34,7 +34,6 @@ export default {
 </script>
 
 <template>
-  <h1>main</h1>
   <div class="debug">
     <!-- questo l'ordine di presentazione dei componenti -->
     <home id="home" />
