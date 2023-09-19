@@ -4,7 +4,7 @@ export default {
 
   data() {
     return {
-      ciccio: "images/backgrounds/hero-header-bakery.jpg",
+      backgrounImage: "images/backgrounds/hero-header-bakery.jpg",
     };
   },
 
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <img :src="ciccio" alt="" />
+  <img :src="backgrounImage" alt="" />
 </template>
 
 <style lang="scss" scoped>

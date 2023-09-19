@@ -9,9 +9,9 @@ export const store = reactive({
     "Shop",
     "About",
     "Gallery",
-    "Social",
     "Location",
+    "Journal",
     "Contact",
-    "Orders",
+    "My Account",
   ],
 });

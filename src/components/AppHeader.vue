@@ -29,8 +29,21 @@ export default {
       <div>
         <img src="images/logo/avada-bakery-logo.png" alt="" />
       </div>
-      <div>aaasss</div>
-      <div>aaaaaaxz</div>
+      <div class="list">
+        <ul>
+          <li class="mx-3" v-for="section in store.siteSections">
+            <a :href="section">
+              {{ section }}
+            </a>
+          </li>
+          <!-- per lo shop -->
+          <li>
+            <a href="#">
+              <font-awesome-icon icon="fa-solid fa-cart-shopping" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 </template>
@@ -40,9 +53,27 @@ export default {
   display: flex;
   align-items: center;
 }
+
+ul {
+  color: #55328b;
+  li {
+    list-style: none;
+    display: inline-block;
+    a {
+      color: currentColor;
+      text-decoration: none;
+    }
+    &:hover {
+      content: " ";
+      border-bottom: 3px solid;
+    }
+  }
+}
+
 .header-zone {
   display: flex;
   align-items: center;
+
   img {
     height: var(--header-height);
   }

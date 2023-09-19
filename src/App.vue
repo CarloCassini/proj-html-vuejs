@@ -33,7 +33,7 @@ export default {
 
 <template>
   <Floating_button />
-  <AppHeader class="header-zone debug" />
+  <AppHeader class="header" />
   <AppMain />
 
   <AppFooter class="debug" />
@@ -43,7 +43,7 @@ export default {
 @use "./style/variables.scss" as *;
 @use "./style/general.scss" as *;
 
-.header-zone {
+.header {
   height: var(--header-height);
   position: absolute;
   left: 0px;
