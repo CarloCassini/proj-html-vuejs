@@ -19,7 +19,11 @@ export default {
 </script>
 
 <template>
-  <h1>shop</h1>
+  <section>
+    <div class="container">
+      <h1>weee</h1>
+    </div>
+  </section>
 </template>
 
 <style lang="scss" scoped></style>
