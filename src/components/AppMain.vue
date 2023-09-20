@@ -37,7 +37,7 @@ export default {
   <div>
     <!-- questo l'ordine di presentazione dei componenti -->
     <home id="home" />
-    <shop id="shop" />
+    <shop id="shop" :products="store.products" />
     <about id="about" />
     <gallery id="gallery" />
     <social id="social" />

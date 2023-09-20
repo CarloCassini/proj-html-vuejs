@@ -10,6 +10,8 @@ export default {
       txtLittleTitle: `fresh & tasty backery every day`,
       txtBigTitle: `the perfect fresh bread`,
       txtParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt velit fugit iure, necessitatibus blanditiis maxime esse perferendis reiciendis earum atque dicta officia tempora sunt reprehenderit ut hic a ipsam et.`,
+
+      txtBottone: "explore our products",
     };
   },
 
@@ -35,7 +37,7 @@ export default {
             :bigTitle="txtBigTitle"
             :paragraph="txtParagraph"
           />
-          <bottone :innerText="'explore our products'" />
+          <bottone :innerText="txtBottone" />
         </div>
       </div>
     </div>

@@ -19,4 +19,19 @@ export const store = reactive({
       icon: true,
     },
   ],
+
+  products: [
+    {
+      id: "1",
+      title: "blackberry stuffed bread",
+      price: 20,
+      img: "/images/product/blackberry-stuffed-bread.jpg",
+    },
+    {
+      id: "1",
+      title: "blackberry stuffed bread",
+      price: 20,
+      img: "/images/product/strawberry-jam-cookies.jpg",
+    },
+  ],
 });
