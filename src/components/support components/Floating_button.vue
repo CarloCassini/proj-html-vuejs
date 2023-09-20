@@ -28,6 +28,7 @@ export default {
 
 <style lang="scss" scoped>
 .float-zone {
+  z-index: 5;
   display: flex;
   flex-direction: column;
   position: fixed;

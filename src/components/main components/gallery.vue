@@ -7,9 +7,9 @@ export default {
 
   data() {
     return {
-      txtLittleTitle: `our products`,
-      txtBigTitle: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dsbdfn dnsb èapw `,
-      txtParagraph: `asd`,
+      txtCenter: true,
+      txtBigTitle: `find a freshly baked product perfect for you `,
+      txtParagraph: `  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur architecto iusto soluta atque magnam voluptate repellendus magni, consectetur aliquid ut!`,
 
       txtBottone: "shop all products",
 
@@ -29,12 +29,10 @@ export default {
       }
     },
     changeIndexNext() {
-      this.carouselStart = this.carouselStart + 1;
-      if (
-        this.carouselStart >=
-        this.products.length - this.carouselCountImg + 1
-      ) {
+      if (this.carouselStart >= this.products.length - this.carouselCountImg) {
         this.carouselStart = 0;
+      } else {
+        this.carouselStart = this.carouselStart + 1;
       }
     },
   },
@@ -56,11 +54,14 @@ export default {
         <!-- trascrizione del paragrafo -->
         <div class="col-3">
           <paragraph
+            :center="txtCenter"
             :littleTitle="txtLittleTitle"
             :bigTitle="txtBigTitle"
             :paragraph="txtParagraph"
           />
-          <bottone :innerText="txtBottone" />
+          <div class="d-flex justify-content-center">
+            <bottone :innerText="txtBottone" />
+          </div>
         </div>
         <div class="col-9">
           <div>
