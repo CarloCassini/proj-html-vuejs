@@ -12,12 +12,22 @@ export default {
       txtParagraph: ``,
 
       txtBottone: "start shopping",
+
+      carouselStart: 0,
     };
   },
 
   computed: {},
 
-  methods: {},
+  methods: {
+    changeIndexPrev() {
+      console.log("prev");
+    },
+    changeIndexNext() {
+      this.carouselStart = this.carouselStart + 1;
+      console.log("next");
+    },
+  },
 
   // created(): {},
 
@@ -44,7 +54,13 @@ export default {
         </div>
         <div class="col-8">
           <div>
-            <carousel :products="products" :index="5" :nrImages="3" />
+            <carousel
+              :products="products"
+              :index="carouselStart"
+              :nrImages="2"
+              @change-index-prev="changeIndexPrev()"
+              @change-index-next="changeIndexNext()"
+            />
 
             <!-- <div v-for="product in products">
               <img :src="product.img" alt="" />

@@ -6,8 +6,6 @@ export default {
     return {};
   },
 
-  computed: {},
-
   methods: {},
 
   // created(): {},
@@ -18,7 +16,14 @@ export default {
     nrImages: Number,
   },
 
-  emits: [],
+  emits: ["change-index-prev", "change-index-next"],
+  computed: {
+    indexArray() {
+      const path = this.nrImages - 1;
+
+      return path;
+    },
+  },
 };
 </script>
 
@@ -26,16 +31,26 @@ export default {
   <div class="carousel-zone">
     <!-- zona delle immagini -->
     <div class="d-flex justify-content-between gap-3">
-      <div>
-        <img :src="products[index].img" class="d-block w-100" alt="..." />
-      </div>
-      <div>
-        <img :src="products[index + 1].img" class="d-block w-100" alt="..." />
+      <div v-for="numero in nrImages">
+        {{ indexArray }}
+        <div>
+          <img
+            :src="products[index + numero - 1].img"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
       </div>
     </div>
     <!-- bottoni -->
-    <div class="carousel-btn carousel-control-prev-icon"></div>
-    <div class="carousel-btn carousel-control-next-icon"></div>
+    <div
+      class="carousel-btn carousel-control-prev-icon"
+      @click="$emit('change-index-prev')"
+    ></div>
+    <div
+      class="carousel-btn carousel-control-next-icon"
+      @click="$emit('change-index-next')"
+    ></div>
   </div>
 </template>
 
