@@ -39,7 +39,7 @@ export default {
     <home id="home" />
     <shop id="shop" :products="store.products" />
     <about id="about" />
-    <gallery id="gallery" />
+    <gallery id="gallery" :products="store.products" />
     <social id="social" />
     <location id="location" />
     <contact id="contact" />

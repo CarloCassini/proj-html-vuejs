@@ -25,7 +25,6 @@ export default {
       if (this.carouselStart <= 0) {
         this.carouselStart = this.products.length - this.carouselCountImg;
       } else {
-        console.log("yeppa");
         this.carouselStart = this.carouselStart - 1;
       }
     },
@@ -69,11 +68,6 @@ export default {
               @change-index-prev="changeIndexPrev()"
               @change-index-next="changeIndexNext()"
             />
-
-            <!-- <div v-for="product in products">
-              <img :src="product.img" alt="" />
-              <div>{{ product.priceA }}</div>
-            </div> -->
           </div>
         </div>
       </div>
