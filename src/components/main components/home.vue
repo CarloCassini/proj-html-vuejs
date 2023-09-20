@@ -1,11 +1,15 @@
 <script>
 import bottone from "../support components/button.vue";
+import paragraph from "../support components/paragraph.vue";
 export default {
-  components: { bottone },
+  components: { bottone, paragraph },
 
   data() {
     return {
       backgrounImage: "images/backgrounds/hero-header-bakery.jpg",
+      txtLittleTitle: `fresh & tasty backery every day`,
+      txtBigTitle: `the perfect fresh bread`,
+      txtParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt velit fugit iure, necessitatibus blanditiis maxime esse perferendis reiciendis earum atque dicta officia tempora sunt reprehenderit ut hic a ipsam et.`,
     };
   },
 
@@ -26,15 +30,11 @@ export default {
     <div class="container">
       <div class="row hero-zone">
         <div class="col-4">
-          <p>fresh & tasty backery every day</p>
-          <h1>the perfect fresh bread</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            velit fugit iure, necessitatibus blanditiis maxime esse perferendis
-            reiciendis earum atque dicta officia tempora sunt reprehenderit ut
-            hic a ipsam et.
-          </p>
-
+          <paragraph
+            :littleTitle="txtLittleTitle"
+            :bigTitle="txtBigTitle"
+            :paragraph="txtParagraph"
+          />
           <bottone :innerText="'explore our products'" />
         </div>
       </div>

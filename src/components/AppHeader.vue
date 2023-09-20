@@ -32,7 +32,7 @@ export default {
 
 <template>
   <section>
-    <div class="container header-zone">
+    <div class="container header-zone debug">
       <div>
         <img src="images/logo/avada-bakery-logo.png" alt="" />
       </div>
