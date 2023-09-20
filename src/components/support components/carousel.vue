@@ -59,12 +59,13 @@ export default {
   .carousel-btn {
     color: var(--palette-white);
     background-color: var(--palette-lilla);
-    padding: 5% 2%;
+    padding: 3% 1%;
 
     cursor: pointer;
 
     position: absolute;
     top: 50%;
+    transform: translate(0, -50%);
 
     &:first-child {
       left: 0px;
