@@ -55,11 +55,4 @@ section {
 img {
   width: 100%;
 }
-p {
-  color: var(--palette-gray);
-}
-h2,
-h1 {
-  color: var(--palette-purple);
-}
 </style>

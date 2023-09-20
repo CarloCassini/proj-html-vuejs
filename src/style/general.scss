@@ -2,3 +2,12 @@
   border: 1px dashed red;
   background-color: rgba(0, 255, 0, 0.3);
 }
+p {
+  color: var(--palette-gray);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--palette-purple);
+}
