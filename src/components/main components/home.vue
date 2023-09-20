@@ -1,6 +1,7 @@
 <script>
+import bottone from "../support components/button.vue";
 export default {
-  components: {},
+  components: { bottone },
 
   data() {
     return {
@@ -25,15 +26,16 @@ export default {
     <div class="container">
       <div class="row hero-zone">
         <div class="col-4">
-          <div class="intro-title">fresh and tasty backery every day</div>
-          <h2>the perfect fresh bread</h2>
-          <div>
+          <p>fresh & tasty backery every day</p>
+          <h1>the perfect fresh bread</h1>
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
             velit fugit iure, necessitatibus blanditiis maxime esse perferendis
             reiciendis earum atque dicta officia tempora sunt reprehenderit ut
             hic a ipsam et.
-          </div>
-          <div>XXX BOTTONE XXX</div>
+          </p>
+
+          <bottone :innerText="'explore our products'" />
         </div>
       </div>
     </div>
@@ -53,7 +55,11 @@ section {
 img {
   width: 100%;
 }
-.intro-title {
-  color: grey;
+p {
+  color: var(--palette-gray);
+}
+h2,
+h1 {
+  color: var(--palette-purple);
 }
 </style>
