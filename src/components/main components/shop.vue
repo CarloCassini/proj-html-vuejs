@@ -14,6 +14,7 @@ export default {
       txtBottone: "start shopping",
 
       carouselStart: 0,
+      carouselCountImg: 2,
     };
   },
 
@@ -21,11 +22,18 @@ export default {
 
   methods: {
     changeIndexPrev() {
-      console.log("prev");
+      if (this.carouselStart <= 0) {
+        this.carouselStart = this.products.length - this.carouselCountImg;
+      } else {
+        console.log("yeppa");
+        this.carouselStart = this.carouselStart - 1;
+      }
     },
     changeIndexNext() {
       this.carouselStart = this.carouselStart + 1;
-      console.log("next");
+      if (this.carouselStart >= this.products.length - 1) {
+        this.carouselStart = 0;
+      }
     },
   },
 
@@ -57,7 +65,7 @@ export default {
             <carousel
               :products="products"
               :index="carouselStart"
-              :nrImages="2"
+              :nrImages="carouselCountImg"
               @change-index-prev="changeIndexPrev()"
               @change-index-next="changeIndexNext()"
             />

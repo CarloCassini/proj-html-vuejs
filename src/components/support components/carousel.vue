@@ -32,7 +32,6 @@ export default {
     <!-- zona delle immagini -->
     <div class="d-flex justify-content-between gap-3">
       <div v-for="numero in nrImages">
-        {{ indexArray }}
         <div>
           <img
             :src="products[index + numero - 1].img"
