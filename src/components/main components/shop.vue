@@ -45,6 +45,10 @@ export default {
           <h1>carosellooooo</h1>
           <div class="d-flex">
             <!-- <img :src="products[1].img" alt="" /> -->
+            <div v-for="product in products">
+              <img :src="product.img" alt="" />
+              <div>{{ product.priceA }}</div>
+            </div>
           </div>
         </div>
       </div>
