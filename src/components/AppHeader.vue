@@ -13,7 +13,14 @@ export default {
 
   computed: {},
 
-  methods: {},
+  methods: {
+    activatePage(index) {
+      for (let i = 0; i < store.siteSections.length; i++) {
+        store.siteSections[i].active = false;
+      }
+      store.siteSections[index].active = true;
+    },
+  },
 
   // created(): {},
 
@@ -31,16 +38,19 @@ export default {
       </div>
       <div class="list">
         <ul>
-          <li class="mx-3" v-for="section in store.siteSections">
-            <a :href="section">
-              {{ section }}
-            </a>
-          </li>
-          <!-- per lo shop -->
-          <li>
-            <a href="#">
-              <font-awesome-icon icon="fa-solid fa-cart-shopping" />
-            </a>
+          <li class="mx-3" v-for="(section, index) in store.siteSections">
+            <div v-if="!section.icon">
+              <a :href="section" @click.prevent="activatePage(index)">
+                {{ section.index }}
+              </a>
+              <div class="underline" v-show="section.active == true"></div>
+            </div>
+            <div v-else>
+              <a :href="section" @click.prevent="activatePage(index)">
+                <font-awesome-icon :icon="section.index" />
+              </a>
+              <div class="underline" v-show="section.active == true"></div>
+            </div>
           </li>
         </ul>
       </div>
@@ -63,10 +73,14 @@ ul {
       color: currentColor;
       text-decoration: none;
     }
-    &:hover {
+    .underline {
       content: " ";
       border-bottom: 3px solid;
     }
+    // &:hover {
+    //   content: " ";
+    //   border-bottom: 3px solid;
+    // }
   }
 }
 
