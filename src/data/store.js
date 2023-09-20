@@ -95,7 +95,7 @@ export const store = reactive({
       id: "11",
       title: "strawberry donut",
       priceA: 11,
-      priceB: 66,
+      priceB: 33,
       img: "/images/product/strawberry-donut.jpg",
     },
   ],

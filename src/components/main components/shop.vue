@@ -1,8 +1,9 @@
 <script>
 import bottone from "../support components/button.vue";
 import paragraph from "../support components/paragraph.vue";
+import carousel from "../support components/carousel.vue";
 export default {
-  components: { bottone, paragraph },
+  components: { bottone, paragraph, carousel },
 
   data() {
     return {
@@ -42,13 +43,13 @@ export default {
           <bottone :innerText="txtBottone" />
         </div>
         <div class="col-8">
-          <h1>carosellooooo</h1>
-          <div class="d-flex">
-            <!-- <img :src="products[1].img" alt="" /> -->
-            <div v-for="product in products">
+          <div>
+            <carousel :products="products" :index="5" :nrImages="3" />
+
+            <!-- <div v-for="product in products">
               <img :src="product.img" alt="" />
               <div>{{ product.priceA }}</div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -58,6 +59,6 @@ export default {
 
 <style lang="scss" scoped>
 img {
-  width: 100%;
+  width: 50%;
 }
 </style>
