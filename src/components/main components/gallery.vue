@@ -15,6 +15,7 @@ export default {
 
       carouselStart: 0,
       carouselCountImg: 4,
+      cardTipe: "gallery",
     };
   },
 
@@ -69,6 +70,7 @@ export default {
               :products="products"
               :index="carouselStart"
               :nrImages="carouselCountImg"
+              :cardTipe="cardTipe"
               @change-index-prev="changeIndexPrev()"
               @change-index-next="changeIndexNext()"
             />

@@ -24,6 +24,7 @@ export const store = reactive({
     {
       id: "1",
       title: "blackberry stuffed bread",
+      tipe: " bread",
       priceA: 12.32,
       priceB: 12.32,
       img: "/images/product/blackberry-stuffed-bread.jpg",
@@ -31,6 +32,7 @@ export const store = reactive({
     {
       id: "2",
       title: "strawberry jam cookies",
+      tipe: " cookies, pastries",
       priceA: 15.23,
       priceB: 12.32,
       img: "/images/product/strawberry-jam-cookies.jpg",
@@ -38,6 +40,7 @@ export const store = reactive({
     {
       id: "3",
       title: "cherry cake",
+      tipe: "cake",
       priceA: 43.13,
       priceB: 78.65,
       img: "/images/product/cherry-cake.jpg",
@@ -45,6 +48,7 @@ export const store = reactive({
     {
       id: "4",
       title: "choco chip cookies",
+      tipe: " cookies, pastries",
       priceA: 11,
       priceB: 22,
       img: "/images/product/choco-chip-cookies.jpg",
@@ -52,6 +56,7 @@ export const store = reactive({
     {
       id: "5",
       title: "cookies with ice-cream",
+      tipe: " cookies, pastries",
       priceA: 42.5,
       priceB: 89.3,
       img: "/images/product/cookies-with-ice-cream.jpg",
@@ -59,6 +64,7 @@ export const store = reactive({
     {
       id: "6",
       title: "glazed pancake with lemon",
+      tipe: " cake",
       priceA: 16.12,
       priceB: 76.33,
       img: "/images/product/glazed-pancake-with-lemon.jpg",
@@ -66,6 +72,7 @@ export const store = reactive({
     {
       id: "7",
       title: "home bread",
+      tipe: " bread",
       priceA: 1.2,
       priceB: 3.4,
       img: "/images/product/home-bread.jpg",
@@ -73,6 +80,7 @@ export const store = reactive({
     {
       id: "8",
       title: "perfect macarons",
+      tipe: " cookies, pastries",
       priceA: 123.45,
       priceB: 678.9,
       img: "/images/product/perfect-macarons.jpg",
@@ -80,6 +88,7 @@ export const store = reactive({
     {
       id: "9",
       title: "premium bread",
+      tipe: " bread",
       priceA: 0.44,
       priceB: 2.34,
       img: "/images/product/premium-bread.jpg",
@@ -87,6 +96,7 @@ export const store = reactive({
     {
       id: "10",
       title: "small cupcake",
+      tipe: " cake",
       priceA: 33,
       priceB: 33.5,
       img: "/images/product/small-cupcake.jpg",
@@ -94,6 +104,7 @@ export const store = reactive({
     {
       id: "11",
       title: "strawberry donut",
+      tipe: " donut",
       priceA: 11,
       priceB: 33,
       img: "/images/product/strawberry-donut.jpg",

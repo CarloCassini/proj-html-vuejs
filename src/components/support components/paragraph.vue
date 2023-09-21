@@ -46,9 +46,9 @@ export default {
 @use "../../style/general.scss" as *;
 
 p.invert {
-  color: var(--palette-white);
+  color: var(--palette-purewhite);
 }
 h1.invert {
-  color: var(--palette-white);
+  color: var(--palette-purewhite);
 }
 </style>

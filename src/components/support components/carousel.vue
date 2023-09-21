@@ -1,6 +1,8 @@
 <script>
+import card from "./card.vue";
+
 export default {
-  components: {},
+  components: { card },
 
   data() {
     return {};
@@ -14,6 +16,7 @@ export default {
     products: Array,
     index: Number,
     nrImages: Number,
+    cardTipe: String,
   },
 
   emits: ["change-index-prev", "change-index-next"],
@@ -33,11 +36,12 @@ export default {
     <div class="d-flex justify-content-between gap-3">
       <div v-for="numero in nrImages">
         <div>
-          <img
+          <card :product="products[index + numero - 1]" :cardTipe="cardTipe" />
+          <!-- <img
             :src="products[index + numero - 1].img"
             class="d-block w-100"
             alt="..."
-          />
+          /> -->
         </div>
       </div>
     </div>
