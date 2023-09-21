@@ -21,6 +21,8 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { faPinterestP } from "@fortawesome/free-brands-svg-icons";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faFolderOpen } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
 // ogni icona aggiunta alla libreria (ccn.ADD) va aggiunta a questa riga di co-dice.
@@ -30,7 +32,9 @@ library.add(
   faInstagram,
   faTwitter,
   faFacebookF,
-  faPinterestP
+  faPinterestP,
+  faChevronUp,
+  faFolderOpen
 );
 // per usare font awerome devo agganciarmi a un componente al quale aggiungerò tutti gli elementi che mi serviranno
 
