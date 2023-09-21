@@ -50,13 +50,20 @@ export default {
     </div>
   </div>
   <!-- sottotitolo x gallery -->
-  <div v-if="cardTipe == 'gallery'" class="text-center">
-    <div>{{ product.title }}</div>
+  <div v-if="cardTipe == 'gallery'" class="text-center m-1 gallery-description">
+    <div class="gallery-title">{{ product.title }}</div>
     <div>${{ product.priceA }} - ${{ product.priceB }}</div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.gallery-description {
+  color: var(--palette-purple);
+  .gallery-title {
+    font-weight: bold;
+    font-size: large;
+  }
+}
 img {
   width: 100%;
 }
@@ -71,6 +78,7 @@ img {
   background-color: rgba(0, 0, 0, 0.3);
 
   a {
+    font-size: x-small;
     color: currentColor;
     text-decoration: none;
   }

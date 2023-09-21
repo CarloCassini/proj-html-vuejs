@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-  <h1>social</h1>
+  <section class="container"></section>
 </template>
 
 <style lang="scss" scoped></style>
