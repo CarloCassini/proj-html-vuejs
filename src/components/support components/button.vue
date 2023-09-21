@@ -15,6 +15,7 @@ export default {
   props: {
     invert: Boolean,
     innerText: String,
+    icon: String,
   },
 
   emits: [],
@@ -27,6 +28,8 @@ export default {
     class="btn d-flex justify-content-center align-items-center"
     :class="invert ? 'invert' : 'base'"
   >
+    <!-- se viene passata una icona al bottone -->
+    <font-awesome-icon v-if="icon" :icon="icon" class="me-3" />
     {{ innerText }}
   </button>
 </template>

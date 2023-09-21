@@ -41,7 +41,12 @@ export default {
             bigTitle="Let's stay in touch"
             :paragraph="txtParagraph"
           />
-          <bottone innerText="Explore More" :invert="true" />
+          <bottone
+            innerText="follow-us"
+            :invert="true"
+            class="mt-3"
+            :icon="'fa-brands fa-instagram'"
+          />
         </div>
       </div>
       <div class="col-3 p-3">
