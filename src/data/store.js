@@ -4,6 +4,8 @@ import { reactive } from "vue";
 
 // qui dentro mettimao tutti i data globali
 export const store = reactive({
+  wishList: 0,
+
   siteSections: [
     { index: "Home", active: true, icon: false },
     { index: "Shop", active: false, icon: false },

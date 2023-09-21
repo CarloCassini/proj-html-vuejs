@@ -32,7 +32,7 @@ export default {
 
 <template>
   <section>
-    <div class="container header-zone">
+    <div class="m-3 header-zone">
       <div>
         <img src="images/logo/avada-bakery-logo.png" alt="" />
       </div>
@@ -89,7 +89,7 @@ ul {
   align-items: center;
 
   img {
-    height: var(--header-height);
+    height: 70px;
   }
 
   :first-child {

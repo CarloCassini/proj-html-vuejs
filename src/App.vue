@@ -36,7 +36,7 @@ export default {
   <AppHeader class="header" />
   <AppMain />
 
-  <AppFooter class="debug" />
+  <AppFooter />
 </template>
 
 <style lang="scss">

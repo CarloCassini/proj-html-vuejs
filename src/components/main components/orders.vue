@@ -27,8 +27,8 @@ export default {
 </script>
 
 <template>
-  <section>
-    <div class="container">
+  <section class="my-5">
+    <div class="container p-5">
       <div class="row">
         <div class="col-8 p-5">
           <paragraph
