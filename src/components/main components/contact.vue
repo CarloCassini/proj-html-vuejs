@@ -39,7 +39,6 @@ export default {
             :center="txtCenter"
             littleTitle="MADE FOR SHARING"
             bigTitle="Let's stay in touch"
-            :paragraph="txtParagraph"
           />
           <bottone
             innerText="follow-us"

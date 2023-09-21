@@ -1,5 +1,6 @@
 :root {
   --header-height: 15vh;
+  --jumbo-height: calc(100vh - var(--header-height));
 
   --palette-purewhite: white;
   --palette-white: #f0edf5;
