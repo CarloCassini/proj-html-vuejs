@@ -41,7 +41,7 @@ export default {
     <about id="about" />
     <gallery id="gallery" :products="store.products" />
     <social id="social" />
-    <location id="location" />
+    <location id="location" :cities="store.cities" />
     <contact id="contact" />
     <orders id="orders" />
   </div>

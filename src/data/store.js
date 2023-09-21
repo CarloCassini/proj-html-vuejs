@@ -110,4 +110,19 @@ export const store = reactive({
       img: "/images/product/strawberry-donut.jpg",
     },
   ],
+
+  cities: [
+    {
+      name: "New York",
+      workTime: "9:00 AM - 6:00 PM",
+      phone: "1.800.458.444",
+      img: "/images/stores/new-york-bk.jpg",
+    },
+    {
+      name: "London",
+      workTime: "9:00 AM - 6:00 PM",
+      phone: "1.800.458.777",
+      img: "/images/stores/london-bk.jpg",
+    },
+  ],
 });

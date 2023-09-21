@@ -29,8 +29,11 @@ export default {
     :class="invert ? 'invert' : 'base'"
   >
     <!-- se viene passata una icona al bottone -->
-    <font-awesome-icon v-if="icon" :icon="icon" class="me-3" />
-    {{ innerText }}
+    <div class="mx-3">
+      <font-awesome-icon v-if="icon" :icon="icon" class="me-3" />
+
+      {{ innerText }}
+    </div>
   </button>
 </template>
 

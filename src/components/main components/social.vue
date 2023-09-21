@@ -6,7 +6,7 @@ export default {
   data() {
     return {
       txtLittleTitle: `DON'T JUST TAKE OUR WORD FOR IT`,
-      txtBigTitle: `"finally found asd fe dsfvccx jug   Lorem ipsum, dolo consectetur adipisicing elit. Assumenda, iste? "`,
+      txtBigTitle: `"finally found asd fe dsfvccx jug   Lorem ipsum, dolo consectetur adipisicing eipsum, dolo consectetur adipisicing eipsum, dolo consectetur adipisicing e lit. Assumenda, iste? "`,
       txtParagraph: `Rachel Cooper, Founder`,
     };
   },
@@ -42,7 +42,6 @@ export default {
       </div>
       <div class="col-6 p-3 jumbo">
         <div class="debug social-form p-5">
-          >
           <paragraph
             :littleTitle="txtLittleTitle"
             :bigTitle="txtBigTitle"
