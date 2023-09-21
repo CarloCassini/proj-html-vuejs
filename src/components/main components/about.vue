@@ -48,7 +48,7 @@ export default {
               littleTitle="INTERNATIONAL BAKERY"
               bigTitle="Corporate Events"
             />
-            <bottone :innerText="txtBottone" />
+            <bottone :innerText="txtBottone" :invert="true" />
           </div>
         </div>
         <div class="col-6 p-3 about-wedding">
@@ -60,7 +60,7 @@ export default {
               littleTitle="INTERNATIONAL BAKERY"
               bigTitle="Wedding Events"
             />
-            <bottone :innerText="txtBottone" />
+            <bottone :innerText="txtBottone" :invert="true" />
           </div>
         </div>
       </div>

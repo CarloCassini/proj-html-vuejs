@@ -61,7 +61,7 @@ export default {
             :paragraph="txtParagraph"
           />
           <div class="d-flex justify-content-center">
-            <bottone :innerText="txtBottone" />
+            <bottone :innerText="txtBottone" :invert="true" />
           </div>
         </div>
         <div class="col-9">

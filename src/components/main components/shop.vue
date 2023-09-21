@@ -58,7 +58,7 @@ export default {
             :bigTitle="txtBigTitle"
             :paragraph="txtParagraph"
           />
-          <bottone :innerText="txtBottone" />
+          <bottone :innerText="txtBottone" :invert="true" />
         </div>
         <div class="col-8">
           <div>

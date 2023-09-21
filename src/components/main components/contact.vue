@@ -1,9 +1,14 @@
 <script>
+import bottone from "../support components/button.vue";
+import paragraph from "../support components/paragraph.vue";
+
 export default {
-  components: {},
+  components: { paragraph, bottone },
 
   data() {
-    return {};
+    return {
+      txtCenter: true,
+    };
   },
 
   computed: {},
@@ -27,7 +32,18 @@ export default {
           <img src="images/social/social-1.jpg" alt="" />
         </div>
       </div>
-      <div class="col-6 p-3"><div class="">form</div></div>
+      <!-- form zone -->
+      <div class="col-6 p-3">
+        <div class="bg-form">
+          <paragraph
+            :center="txtCenter"
+            littleTitle="MADE FOR SHARING"
+            bigTitle="Let's stay in touch"
+            :paragraph="txtParagraph"
+          />
+          <bottone innerText="Explore More" :invert="true" />
+        </div>
+      </div>
       <div class="col-3 p-3">
         <div class=""><img src="images/social/social-2.jpg" alt="" /></div>
       </div>
@@ -49,6 +65,15 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.bg-form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--palette-white);
+}
 img {
   width: 100%;
 }

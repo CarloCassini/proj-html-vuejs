@@ -4,7 +4,9 @@ export default {
   components: { paragraph },
 
   data() {
-    return {};
+    return {
+      txtCenter: true,
+    };
   },
 
   methods: {},
@@ -29,14 +31,14 @@ export default {
       <div class="onhover">
         <paragraph
           :invertColor="true"
-          :center="true"
+          :center="txtCenter"
           :bigTitle="product.title"
           :paragraph="product.tipe"
         />
         <div>
           <paragraph
             :invertColor="true"
-            :center="true"
+            :center="txtCenter"
             :littleTitle="'$' + product.priceA + ' ' + '$' + product.priceB"
           />
         </div>
